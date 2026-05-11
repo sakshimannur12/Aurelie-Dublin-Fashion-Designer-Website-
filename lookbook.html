@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurelia Dublin – Lookbook</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+  body {
+    background-image: url('images/blur-bg-lookbook.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15,15,15,0.85);
+    z-index: -1;
+  }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <h1 class="logo"><a href="index.html">AURÉLIA</a></h1>
+  <input type="checkbox" id="hamburger">
+  <label for="hamburger" class="hamburger-look">☰</label>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="collections.html">Collections</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="lookbook.html">Lookbook</a></li>
+    <li><a href="exhibitions.html">Exhibitions</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<header class="page-header">
+  <h2>Lookbook</h2>
+</header>
+<main class="wrapper">
+  <div class="home-cards">
+    <div class="home-card">
+      <input type="checkbox" id="lightbox-l1" class="lightbox-toggle">
+      <label for="lightbox-l1" class="lightbox-trigger card-image" style="background-image: url('images/look1.jpg');"></label>
+      <div class="lightbox">
+        <label for="lightbox-l1" class="lightbox-close">&times;</label>
+        <img src="images/look1.jpg" alt="Evening elegance look">
+      </div>
+      <div class="card-overlay">
+        <h3>Evening Elegance</h3>
+        <a href="#" class="card-link">View Look →</a>
+      </div>
+    </div>
+    <div class="home-card">
+      <input type="checkbox" id="lightbox-l2" class="lightbox-toggle">
+      <label for="lightbox-l2" class="lightbox-trigger card-image" style="background-image: url('images/look2.jpg');"></label>
+      <div class="lightbox">
+        <label for="lightbox-l2" class="lightbox-close">&times;</label>
+        <img src="images/look2.jpg" alt="Daywear tailoring">
+      </div>
+      <div class="card-overlay">
+        <h3>Daywear Tailoring</h3>
+        <a href="#" class="card-link">View Look →</a>
+      </div>
+    </div>
+    <div class="home-card">
+      <input type="checkbox" id="lightbox-l3" class="lightbox-toggle">
+      <label for="lightbox-l3" class="lightbox-trigger card-image" style="background-image: url('images/look3.jpg');"></label>
+      <div class="lightbox">
+        <label for="lightbox-l3" class="lightbox-close">&times;</label>
+        <img src="images/look3.jpg" alt="Avant-Garde look">
+      </div>
+      <div class="card-overlay">
+        <h3>Avant-Garde</h3>
+        <a href="#" class="card-link">View Look →</a>
+      </div>
+    </div>
+    <div class="home-card">
+      <input type="checkbox" id="lightbox-l4" class="lightbox-toggle">
+      <label for="lightbox-l4" class="lightbox-trigger card-image" style="background-image: url('images/look4.jpg');"></label>
+      <div class="lightbox">
+        <label for="lightbox-l4" class="lightbox-close">&times;</label>
+        <img src="images/look4.jpg" alt="Coastal Breeze">
+      </div>
+      <div class="card-overlay">
+        <h3>Coastal Breeze</h3>
+        <a href="#" class="card-link">View Look →</a>
+      </div>
+    </div>
+    <div class="home-card">
+      <input type="checkbox" id="lightbox-l5" class="lightbox-toggle">
+      <label for="lightbox-l5" class="lightbox-trigger card-image" style="background-image: url('images/look5.jpg');"></label>
+      <div class="lightbox">
+        <label for="lightbox-l5" class="lightbox-close">&times;</label>
+        <img src="images/look5.jpg" alt="Winter Layers">
+      </div>
+      <div class="card-overlay">
+        <h3>Winter Layers</h3>
+        <a href="#" class="card-link">View Look →</a>
+      </div>
+    </div>
+    <div class="home-card">
+      <input type="checkbox" id="lightbox-l6" class="lightbox-toggle">
+      <label for="lightbox-l6" class="lightbox-trigger card-image" style="background-image: url('images/look6.jpg');"></label>
+      <div class="lightbox">
+        <label for="lightbox-l6" class="lightbox-close">&times;</label>
+        <img src="images/look6.jpg" alt="Gala Night">
+      </div>
+      <div class="card-overlay">
+        <h3>Gala Night</h3>
+        <a href="#" class="card-link">View Look →</a>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-pinterest"></i></a>
+  </div>
+  <p>© 2026 Aurelia Dublin | Designed for MS801 Project</p>
+</footer>
+</body>
+</html>

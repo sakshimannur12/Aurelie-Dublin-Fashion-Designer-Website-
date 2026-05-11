@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurelia Dublin – About</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+  body {
+    background-image: url('images/background_about.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 15, 15, 0.85);
+    z-index: -1;
+  }
+  .dropcap::first-letter {
+    font-size: 3.8rem;
+    font-family: var(--font-heading);
+    color: var(--primary-gold);
+    float: left;
+    margin-right: 0.75rem;
+    line-height: 0.9;
+    font-weight: bold;
+  }
+  .pullquote {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    color: var(--primary-gold);
+    border-left: 4px solid var(--primary-gold);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    line-height: 1.3;
+  }
+  .pullquote span {
+    display: block;
+    font-size: 1rem;
+    color: var(--primary-white);
+    margin-top: 0.5rem;
+    font-style: normal;
+  }
+  .fact-card {
+    background: var(--card-bg);
+    padding: 1.2rem;
+    border-radius: 8px;
+    border-left: 3px solid var(--primary-gold);
+    margin-bottom: 1rem;
+  }
+  .fact-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--primary-gold);
+  }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <h1 class="logo"><a href="index.html">AURÉLIA</a></h1>
+  <input type="checkbox" id="hamburger">
+  <label for="hamburger" class="hamburger-look">☰</label>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="collections.html">Collections</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="lookbook.html">Lookbook</a></li>
+    <li><a href="exhibitions.html">Exhibitions</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<header class="page-header">
+  <h2>About the Designer</h2>
+</header>
+<main class="wrapper">
+  <p class="dropcap">Aurélia Dublin is a contemporary Irish fashion designer known for blending traditional craftsmanship with modern elegance. Inspired by the wild Atlantic landscapes, ancient Celtic motifs, and the ever‑changing Irish light, her collections tell a story of heritage reborn.</p>
+  <div class="pullquote">
+    "Heritage is not the past – it's the future, rewoven."
+    <span>— Aurélia Dublin</span>
+  </div>
+  <p>After graduating from the National College of Art & Design in Dublin, Aurélia worked with luxury houses in London and Paris before launching her own label in 2018. Her debut collection was an instant critical success, praised for its sculptural silhouettes and innovative use of Irish linen and hand‑woven tweeds.</p>
+  <div class="two-col-grid" style="margin: 2rem 0;">
+    <div class="fact-card">
+      <h3>🎓 Education</h3>
+      <p>NCAD Dublin, Central Saint Martins (MA Fashion)</p>
+    </div>
+    <div class="fact-card">
+      <h3>🏆 Awards</h3>
+      <p>Best Irish Designer 2025, European Fashion Award 2024</p>
+    </div>
+    <div class="fact-card">
+      <h3>📍 Studio</h3>
+      <p>Dublin, overlooking the Irish Sea</p>
+    </div>
+    <div class="fact-card">
+      <h3>🏷️ Philosophy</h3>
+      <p>Slow fashion, Irish linen, handcrafted with respect</p>
+    </div>
+  </div>
+  <p>The brand has been featured internationally in Vogue, Elle, and Harper's Bazaar, and continues to redefine luxury fashion with a unique identity rooted in place and memory. Each garment is crafted with respect for slow fashion principles and a deep connection to Irish artisans. Aurélia lives and works in Dublin, where her studio overlooks the Irish Sea – a constant source of inspiration.</p>
+</main>
+<footer class="footer">
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-pinterest"></i></a>
+  </div>
+  <p>© 2026 Aurelia Dublin</p>
+</footer>
+</body>
+</html>

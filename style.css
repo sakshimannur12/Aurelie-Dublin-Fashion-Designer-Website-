@@ -1,0 +1,203 @@
+:root {
+    --primary-dark: #0F0F0F;
+    --primary-gold: #C5A47E;
+    --primary-white: #FFFFFF;
+    --card-bg: #1A1A1A;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Poppins', sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { font-size: 100%; }
+  body {
+    font-family: var(--font-body);
+    background-color: var(--primary-dark);
+    color: var(--primary-white);
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  h1, h2, h3, .logo { font-family: var(--font-heading); }
+  h1 { font-size: clamp(2rem, 6vw, 3.5rem); }
+  h2 { font-size: clamp(1.5rem, 4vw, 2.5rem); }
+  h3 { font-size: clamp(1.2rem, 3vw, 1.8rem); }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: black;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .logo a { text-decoration: none; color: var(--primary-gold); }
+  .menu { display: flex; list-style: none; gap: 1.5rem; }
+  .menu a { text-decoration: none; color: var(--primary-white); transition: color 0.3s; }
+  .menu a:hover { color: var(--primary-gold); }
+  #hamburger { display: none; }
+  .hamburger-look { display: none; }
+  .home-header {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+    display: grid;
+    place-content: center;
+  }
+  .hero-video {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  .hero-overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  .wrapper {
+    max-inline-size: min(100% - 4rem, 1200px);
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+  .home-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 3rem auto;
+  }
+  .home-card {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    background: var(--card-bg);
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .card-image {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.4s ease;
+  }
+  .home-card:hover .card-image { transform: scale(1.05); }
+  .card-overlay {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    padding: 2rem 1rem 1rem;
+  }
+  .card-overlay h3 { margin: 0; color: var(--primary-gold); }
+  .card-link {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid var(--primary-gold);
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+  .page-header {
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 2px solid var(--primary-gold);
+    margin-bottom: 2rem;
+  }
+  .carousel-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .carousel { display: flex; gap: 1rem; padding: 1rem; }
+  .carousel-item {
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+    max-width: 300px;
+  }
+  .carousel-item img { width: 100%; height: auto; display: block; border-radius: 8px; }
+  .contact-wrapper { display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem; }
+  .contact-info { flex: 1; background: var(--card-bg); padding: 2rem; border-radius: 8px; }
+  .contact-info p { margin: 1rem 0; }
+  .contact-info i { color: var(--primary-gold); margin-right: 0.5rem; width: 1.5rem; }
+  .contact-form { flex: 1; background: var(--card-bg); padding: 2rem; border-radius: 8px; }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    background: #2a2a2a;
+    border: 1px solid var(--primary-gold);
+    color: white;
+    border-radius: 4px;
+  }
+  .contact-form button {
+    background: var(--primary-gold);
+    color: black;
+    padding: 0.75rem 2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .contact-form button:hover { opacity: 0.8; transform: translateY(-2px); }
+  .footer { text-align: center; padding: 2rem; background: black; margin-top: auto; }
+  .social-icons { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1rem; }
+  .social-icons a { color: var(--primary-white); font-size: 1.5rem; transition: color 0.3s; }
+  .social-icons a:hover { color: var(--primary-gold); }
+  img { max-width: 100%; height: auto; display: block; }
+  .card img, .carousel-item img { width: 100%; height: 100%; object-fit: cover; }
+  @media (min-width: 700px) {
+    .two-col-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  }
+  section ul { list-style: none; padding: 0; }
+  section ul li {
+    background: var(--card-bg);
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-left: 4px solid var(--primary-gold);
+    transition: 0.3s;
+  }
+  section ul li:hover { background: #262626; transform: translateX(5px); }
+  .lightbox-toggle { display: none; }
+  .lightbox {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.95);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .lightbox img { max-width: 90%; max-height: 90%; object-fit: contain; }
+  .lightbox-close {
+    position: absolute;
+    top: 20px; right: 30px;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 2001;
+  }
+  .lightbox-toggle:checked ~ .lightbox { display: flex; }
+  .lightbox-trigger { cursor: pointer; display: block; }
+  .video-container { position: relative; margin-top: 2rem; }
+  .video-caption {
+    position: absolute;
+    bottom: 15px; left: 15px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    pointer-events: none;
+    font-family: var(--font-body);
+  }

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurelia Dublin – Exhibitions</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+  .shorts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  .shorts-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .shorts-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(197,164,126,0.25);
+  }
+  .video-container-shorts {
+    position: relative;
+    width: 100%;
+    background: #000;
+    aspect-ratio: 9 / 16;
+  }
+  .video-container-shorts video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .shorts-card h3 {
+    margin: 0.75rem 0 0.25rem;
+    font-size: 1.3rem;
+    color: var(--primary-gold);
+  }
+  .shorts-card p {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-bottom: 0.5rem;
+    padding: 0 0.5rem;
+  }
+  @media (max-width: 640px) {
+    .shorts-grid { gap: 1rem; }
+    .shorts-card h3 { font-size: 1.1rem; }
+  }
+</style>
+</head>
+<body>
+ 
+<nav class="nav">
+  <h1 class="logo"><a href="index.html">AURÉLIA</a></h1>
+  <input type="checkbox" id="hamburger">
+  <label for="hamburger" class="hamburger-look">☰</label>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="collections.html">Collections</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="lookbook.html">Lookbook</a></li>
+    <li><a href="exhibitions.html">Exhibitions</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+ 
+<header class="page-header">
+  <h2>Exhibitions</h2>
+  <p style="margin-top: 0.5rem; color: #aaa;">Runway moments from the world's fashion capitals</p>
+</header>
+ 
+<main class="wrapper">
+  <div class="shorts-grid">
+ 
+    <div class="shorts-card">
+      <div class="video-container-shorts">
+        <video controls preload="metadata" playsinline>
+          <source src="videos/milan.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h3>MILAN</h3>
+    </div>
+ 
+    <div class="shorts-card">
+      <div class="video-container-shorts">
+        <video controls preload="metadata" playsinline>
+          <source src="videos/paris.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h3>PARIS</h3>
+    </div>
+ 
+    <div class="shorts-card">
+      <div class="video-container-shorts">
+        <video controls preload="metadata" playsinline>
+          <source src="videos/dublin.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h3>DUBLIN</h3>
+    </div>
+ 
+    <div class="shorts-card">
+      <div class="video-container-shorts">
+        <video controls preload="metadata" playsinline>
+          <source src="videos/london.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h3>LONDON</h3>
+    </div>
+ 
+  </div>
+ 
+  <div class="two-col-grid" style="margin-top: 3rem;">
+    <ul>
+      <li><strong>2025</strong> – Dublin Fashion Week (Main Stage)</li>
+      <li><strong>2024</strong> – Paris Couture Show, Palais de Tokyo</li>
+      <li><strong>2023</strong> – London Fashion Expo, Saatchi Gallery</li>
+      <li><strong>2022</strong> – Milan Designer Showcase, Palazzo Reale</li>
+    </ul>
+    <ul>
+      <li><strong>2021</strong> – New York Digital Fashion Week</li>
+      <li><strong>2020</strong> – Irish Designers Collective, Dublin Castle</li>
+      <li><strong>2019</strong> – Copenhagen Fashion Summit</li>
+      <li><strong>2018</strong> – Berlin Fashion Week (Guest Designer)</li>
+    </ul>
+  </div>
+</main>
+ 
+<footer class="footer">
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-pinterest"></i></a>
+  </div>
+  <p>© 2026 Aurelia Dublin | Designed for MS801 Project</p>
+</footer>
+ 
+</body>
+</html>

@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+    .hamburger-look { display: block; font-size: 2rem; cursor: pointer; color: var(--primary-gold); }
+    .menu {
+      position: fixed;
+      top: 70px; left: -100vw;
+      width: 80vw; height: 100dvh;
+      background: var(--primary-dark);
+      flex-direction: column;
+      transition: left 0.5s ease-in-out;
+      z-index: 1000;
+      padding: 2rem;
+      gap: 1.5rem;
+    }
+    #hamburger:checked ~ .menu { left: 0; }
+    .nav { padding: 0.75rem 1rem; }
+    .home-cards { grid-template-columns: 1fr; gap: 1rem; margin: 1rem; }
+    .home-header { height: 60vh; }
+    .contact-wrapper { flex-direction: column; }
+    .wrapper { padding-inline: 1rem; }
+    .carousel-item { flex: 0 0 90%; max-width: none; }
+  }
+  @media (max-width: 480px) {
+    .hero-overlay h2 { font-size: 1.8rem; }
+    .hero-overlay p { font-size: 0.9rem; }
+    .card-overlay h3 { font-size: 1.2rem; }
+  }

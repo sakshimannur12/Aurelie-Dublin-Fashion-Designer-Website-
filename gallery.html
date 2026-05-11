@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurelia Dublin – Gallery</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+  body {
+    background-image: url('images/blur-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15,15,15,0.85);
+    z-index: -1;
+  }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <h1 class="logo"><a href="index.html">AURÉLIA</a></h1>
+  <input type="checkbox" id="hamburger">
+  <label for="hamburger" class="hamburger-look">☰</label>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="collections.html">Collections</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="lookbook.html">Lookbook</a></li>
+    <li><a href="exhibitions.html">Exhibitions</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<header class="page-header">
+  <h2>Gallery</h2>
+</header>
+<main class="wrapper">
+  <div class="carousel-wrapper">
+    <div class="carousel">
+      <div class="carousel-item">
+        <input type="checkbox" id="lightbox-g1" class="lightbox-toggle">
+        <label for="lightbox-g1" class="lightbox-trigger">
+          <img src="images/gallery_1.jpg" alt="Runway collection – flowing silk dress">
+        </label>
+        <div class="lightbox">
+          <label for="lightbox-g1" class="lightbox-close">&times;</label>
+          <img src="images/gallery_1.jpg" alt="Runway collection">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <input type="checkbox" id="lightbox-g2" class="lightbox-toggle">
+        <label for="lightbox-g2" class="lightbox-trigger">
+          <img src="images/gallery_2.jpg" alt="Evening gown with Irish lace">
+        </label>
+        <div class="lightbox">
+          <label for="lightbox-g2" class="lightbox-close">&times;</label>
+          <img src="images/gallery_2.jpg" alt="Evening gown">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <input type="checkbox" id="lightbox-g3" class="lightbox-toggle">
+        <label for="lightbox-g3" class="lightbox-trigger">
+          <img src="images/gallery_3.jpg" alt="Autumn/Winter tailored coat">
+        </label>
+        <div class="lightbox">
+          <label for="lightbox-g3" class="lightbox-close">&times;</label>
+          <img src="images/gallery_3.jpg" alt="Tailored coat">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <input type="checkbox" id="lightbox-g4" class="lightbox-toggle">
+        <label for="lightbox-g4" class="lightbox-trigger">
+          <img src="images/gallery_4.jpg" alt="Backstage moment">
+        </label>
+        <div class="lightbox">
+          <label for="lightbox-g4" class="lightbox-close">&times;</label>
+          <img src="images/gallery_4.jpg" alt="Backstage">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <input type="checkbox" id="lightbox-g5" class="lightbox-toggle">
+        <label for="lightbox-g5" class="lightbox-trigger">
+          <img src="images/gallery_5.jpg" alt="Spring collection pastel tones">
+        </label>
+        <div class="lightbox">
+          <label for="lightbox-g5" class="lightbox-close">&times;</label>
+          <img src="images/gallery_5.jpg" alt="Spring collection">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="video-container">
+    <video controls playsinline style="width:100%; border-radius: 8px;">
+      <source src="videos/behind_scenes.mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+    <div class="video-caption">🎬 Behind the scenes of the Autumn/Winter 2025 show</div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-pinterest"></i></a>
+  </div>
+  <p>© 2026 Aurelia Dublin | Designed for MS801 Project</p>
+</footer>
+</body>
+</html>
